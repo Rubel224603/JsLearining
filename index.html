@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Javascript</title>
+</head>
+<body>
+
+    <h2>Javascript ki pare</h2>
+
+    <p id="demo">JavaScript Can change  Html content</p>
+
+
+    <button type="button" onclick='document.getElementById("demo").innerHTML= "Hello world"' >click me</button>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+    <button onclick ="document.getElementById('img').src='pic_bulbon.gif'">Turn on the light </button> 
+     <img src="pic_bulboff.gif" alt="" id="img"/>
+    <button onclick="document.getElementById('img').src='pic_bulboff.gif'" >light off</button>
+    <h1>JavsScript varriable  hold any type of data</h1>
+    <h5>example:</h5>
+    <h3>JavaScript Boolean</h3>
+
+    <script>
+        var a=10;
+        var b='Rubel hosen';
+        document.write('a: = ' + a + "</br>");
+        document.write('b: = ' + b + "</br>");
+      
+        document.write("Varriable a + b = " + a + "+" + b);
+        document.write("</br>");
+        var a = 20;
+        var c = '20';
+        d= Number(c);
+        var sum = a + Number(c);//Number function ;
+        document.write("a=20 & c='20'<br> sum of a+c = "+ sum);
+        document.write("</br>");
+
+        let giveNumber = 20;
+        let givneCharecter = '20';
+        let jog;
+        Jog = giveNumber + Number(givneCharecter); // Converts '20' to a number
+
+        document.write(jog); // Output: 40
+
+        document.write("a=20 & c='20'<br> sum of a+c = "+ a +d );
+        document.write('</br>');
+
+        var  p = 200;
+        var  q = 200;
+        document.write("Use js Boolean:" + " " + (p==q) );
+        document.write("</br>");
+       
+        // increment Operator;
+
+       document.write("Given Value of p: ="+ p +'</br>');
+       document.write("The valu of p++ for post increment: = "+ p++);
+       document.write("</br> after post increment value of p = :  "+ p);
+       document.write("</br> Pre-Increment value ++p=: "+ ++p +"</br>");
+       document.write("Now p is: = " +p +"<br>");
+
+
+       let m= 100;
+       let n=101.201;
+
+        document.write("n = "+ n + " is a'(decimal) ' type: "+ typeof(n));
+        
+
+         var number1 =10;
+         var number2 =20;
+          var sum= number1+ number2;
+          document.write("</br>");
+          document.write("First Number:" + number1);
+          document.write("</br> Second Number:"+ number2);
+          document.write("</br>The sum of two Number ="+ sum);
+          console.log(sum);
+          console.log(typeof(number1));
+          var name='rubel';
+          console.log(typeof(name));
+          let x=true;
+          let y=false;
+          console.log(typeof(x));
+          console.log(typeof(y));
+
+          var mobile=['nokia','realme','samsum','itel'];
+          document.write("<br> It's array object Property: ");
+          document.write(mobile[1]);
+          document.write("<br>");
+
+          let exponent = 10;
+          let power =2;
+        //  exponent = exponent**2;
+
+         // document.write(exponent);// exponent 
+          document.write(Math.pow(exponent,2));
+
+          document.write("</br>" +( exponent /=power));//exponent = exponent/power=/10/2
+          //righshit assinment;
+           var right=10;
+            right>>>=5;
+            document.write(right);
+
+    </script>
+</body>
+</html>
